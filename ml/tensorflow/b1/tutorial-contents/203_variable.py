@@ -4,8 +4,10 @@ My Youtube Channel: https://www.youtube.com/user/MorvanZhou
 
 Dependencies:
 tensorflow: 1.1.0
-"""
-import tensorflow as tf
+""" 
+#FIXME
+
+import tensorflow.compat.v1 as tf
 
 var = tf.Variable(0)    # our first variable in the "global_variable" set
 

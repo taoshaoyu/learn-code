@@ -9,6 +9,8 @@ tensorflow: 1.1.0
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
 
+tf.compat.v1.disable_eager_execution()
+
 m1 = tf.constant([[2, 2]])
 m2 = tf.constant([[3],
                   [3]])

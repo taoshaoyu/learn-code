@@ -6,8 +6,10 @@ Dependencies:
 tensorflow: 1.1.0
 numpy
 """
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import numpy as np
+
+tf.compat.v1.disable_eager_execution()
 
 tf.set_random_seed(1)
 np.random.seed(1)

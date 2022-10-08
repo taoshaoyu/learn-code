@@ -7,10 +7,15 @@ tensorflow: 1.1.0
 matplotlib
 numpy
 """
-import tensorflow as tf
+
+#FIXME
+
+import tensorflow.compat.v1 as tf
 from tensorflow.examples.tutorials.mnist import input_data
 import numpy as np
 import matplotlib.pyplot as plt
+
+tf.compat.v1.disable_eager_execution()
 
 tf.set_random_seed(1)
 np.random.seed(1)

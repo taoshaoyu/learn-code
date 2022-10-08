@@ -6,7 +6,9 @@ Dependencies:
 tensorflow: 1.1.0
 matplotlib
 """
-import tensorflow as tf
+#FIXME
+
+import tensorflow.compat.v1 as tf
 import numpy as np
 import matplotlib.pyplot as plt
 

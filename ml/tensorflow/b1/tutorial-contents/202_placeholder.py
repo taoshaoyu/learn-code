@@ -5,7 +5,9 @@ My Youtube Channel: https://www.youtube.com/user/MorvanZhou
 Dependencies:
 tensorflow: 1.1.0
 """
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+
+tf.compat.v1.disable_eager_execution()
 
 x1 = tf.placeholder(dtype=tf.float32, shape=None)
 y1 = tf.placeholder(dtype=tf.float32, shape=None)

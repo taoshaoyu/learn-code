@@ -4,8 +4,10 @@ My Youtube Channel: https://www.youtube.com/user/MorvanZhou
 
 More information about Dataset: https://github.com/tensorflow/tensorflow/blob/master/tensorflow/docs_src/programmers_guide/datasets.md
 """
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import numpy as np
+
+tf.compat.v1.disable_eager_execution()
 
 
 # load your data or create your data in here
