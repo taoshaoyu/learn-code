@@ -1,2 +1,7 @@
 ml/tensorflow/mine/*.h5
 *.code-workspace
+*.png
+ml/tensorflow/mine/logs/
+ml/tensorflow/mine/my_model/
+ml/tensorflow/mine/my_model2/
+ml/tensorflow/mine/temp.*
