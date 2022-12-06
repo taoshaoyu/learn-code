@@ -7,3 +7,5 @@ ml/tensorflow/mine/my_model2/
 ml/tensorflow/mine/temp.*
 *.o
 *.so
+py/c-extend/s1/PackageName.egg-info/*
+*.egg
