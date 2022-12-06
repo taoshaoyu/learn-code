@@ -27,6 +27,14 @@
             "program": "ml/tensorflow/mine/mnist/sample-1.py",
             "console": "integratedTerminal",
             "justMyCode": false
+        },
+        {
+            "name": "Taosy-simple-3 python",
+            "type": "python",
+            "request": "launch",
+            "program": "ml/tensorflow/mine/Simple/simple-3.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
         }
     ]
 }
