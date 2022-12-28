@@ -27,6 +27,22 @@
             "program": "ml/tensorflow/mine/mnist/sample-1.py",
             "console": "integratedTerminal",
             "justMyCode": false
+        },
+        {
+            "name": "Taosy-estimator python",
+            "type": "python",
+            "request": "launch",
+            "program": "ml/tensorflow/mine/estimator/estimator-s2.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "mine mnist sample5",
+            "type": "python",
+            "request": "launch",
+            "program": "ml/tensorflow/mine/mnist/Sample-5.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
         }
     ]
 }
