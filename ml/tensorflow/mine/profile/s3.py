@@ -1,12 +1,11 @@
 """
 code come from: https://wiki.ncsa.illinois.edu/display/ISL20/Profile+Tensorflow+using+Tensorboard
-用于演示 tensorboard_plugin 的使用
-问题在于：根据测试，这个方法仅仅对 model.fit() 过程有效
+尝试使用tensorflow.summary + tensorboard 来观察 model.predict() 过程的性能
 """
 
 from datetime import datetime
 import os
-import tensorflow
+import tensorflow 
  
 from tensorflow.keras.datasets import mnist
 from tensorflow import keras
@@ -29,15 +28,10 @@ test_images = test_images.reshape((10000, 28 * 28))
 test_images = test_images.astype("float32") / 255
  
 # Create a TensorBoard callback
-logs = "logs/s1/" + datetime.now().strftime("%Y%m%d-%H%M%S")
- 
-tboard_callback = tensorflow.keras.callbacks.TensorBoard(log_dir = logs,
-                                                 histogram_freq = 1,
-                                                 profile_batch = '10,20')
- 
 model.fit(train_images,
           train_labels,
-          epochs=10,
-          batch_size=128,
-          callbacks = [tboard_callback])
-          
+          epochs=1,
+          batch_size=128)
+
+with tensorflow.profiler.experimental.Profile("logs/t/"):
+    model.predict(test_images)
