@@ -1,6 +1,6 @@
 """
 code come from: https://wiki.ncsa.illinois.edu/display/ISL20/Profile+Tensorflow+using+Tensorboard
-尝试使用tensorflow.summary + tensorboard 来观察 model.predict() 过程的性能
+尝试使用tensorflow.profiler.experimental.Profile + tensorboard 来观察 model.predict() 过程的性能
 """
 
 from datetime import datetime
