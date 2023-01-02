@@ -31,4 +31,5 @@ keras_model.compile(
     loss=tf.keras.losses.mean_squared_error,
 )
 
-keras_model.fit(x, y, epochs=10, batch_size=1000)
+with tf.profiler.experimental.Profile("logs/mine/simple/simle-2/"):
+  keras_model.fit(x, y, epochs=10, batch_size=1000)
