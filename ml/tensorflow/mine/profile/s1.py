@@ -29,7 +29,7 @@ test_images = test_images.reshape((10000, 28 * 28))
 test_images = test_images.astype("float32") / 255
  
 # Create a TensorBoard callback
-logs = "logs/s1/" + datetime.now().strftime("%Y%m%d-%H%M%S")
+logs = "logs/mine/profile/s1/"
  
 tboard_callback = tensorflow.keras.callbacks.TensorBoard(log_dir = logs,
                                                  histogram_freq = 1,
