@@ -39,4 +39,5 @@ def training_loop(model, x, y):
 
 model = MyModel()
 
-training_loop(model, x, y)
+with tf.profiler.experimental.Profile("logs/simple1/"):
+  training_loop(model, x, y)
