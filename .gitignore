@@ -9,3 +9,7 @@ ml/tensorflow/mine/temp.*
 *.so
 py/c-extend/s1/PackageName.egg-info/*
 *.egg
+*.h5
+logs/
+my_model/
+*/__pycache__/
