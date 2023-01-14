@@ -13,3 +13,4 @@ py/c-extend/s1/PackageName.egg-info/*
 logs/
 my_model/
 */__pycache__/
+ml/tensorflow/mine/data/
