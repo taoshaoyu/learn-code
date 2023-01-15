@@ -1,5 +1,4 @@
-# 基本装饰器
-
+# 函数 装饰 函数
 def hello(fn):
     def wrapper1():
         print("hello, %s" % fn.__name__)

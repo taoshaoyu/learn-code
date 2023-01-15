@@ -1,4 +1,4 @@
-#基本装饰器范例
+# 函数装饰函数，场景1
 
 registry=[]
 def register(fn):
