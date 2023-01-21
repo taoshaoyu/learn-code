@@ -1,5 +1,0 @@
-- RNN, LSTM, etc.
-- sequence classification
-- predicting next element in the sequence
-- time-series using RNN
-- ...

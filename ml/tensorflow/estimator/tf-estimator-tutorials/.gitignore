@@ -1,6 +1,0 @@
-**/trained_models
-**/.DS_Store
-**/.ipynb_checkpoints
-**/*.pyc
-MNIST-data
-models

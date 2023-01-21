@@ -1,7 +1,0 @@
-tensorflow
-jupyter
-ipdb
-google-api-python-client
-oauth2client
-requests
-sh
