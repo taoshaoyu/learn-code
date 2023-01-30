@@ -13,5 +13,14 @@ model = tf.keras.Sequential(
 def traceme(x):
     return model(x)
 
+#print the node
 for n in traceme.get_concrete_function(tf.zeros((1, 28, 28, 1))).graph.as_graph_def().node:
     print(f"{n.input}->{n.op}->{n.name}")
+
+logdir = "logs"
+writer = tf.summary.create_file_writer(logdir)
+tf.summary.trace_on(graph=True, profiler=True)
+# Forward pass
+traceme(tf.zeros((1, 28, 28, 1)))
+with writer.as_default():
+    tf.summary.trace_export(name="s5", step=0, profiler_outdir=logdir)
