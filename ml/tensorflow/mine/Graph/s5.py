@@ -1,3 +1,7 @@
+# 简单程序，测试目标：
+# 1. keras 创建模型
+# 2. tf.function + concreteFunction + keras model + print node + tensorboard  对比 Graph
+
 import tensorflow as tf
 
 model = tf.keras.Sequential(
