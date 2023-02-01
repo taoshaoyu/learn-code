@@ -21,7 +21,7 @@ def traceme(x):
 for n in traceme.get_concrete_function(tf.zeros((1, 28, 28, 1))).graph.as_graph_def().node:
     print(f"{n.input}->{n.op}->{n.name}")
 
-logdir = "logs"
+logdir = "logs/s5"
 writer = tf.summary.create_file_writer(logdir)
 tf.summary.trace_on(graph=True, profiler=True)
 # Forward pass
