@@ -1,5 +1,5 @@
-# 学习自己做模型，和看模型
-# https://www.tensorflow.org/guide/keras/save_and_serialize
+# 测试： keras + model -> tf.function -> concreteFunction -> pb -> netron
+# https://www.dlology.com/blog/how-to-convert-trained-keras-model-to-tensorflow-and-make-prediction/
 
 import tensorflow as tf
 from tensorflow import keras
