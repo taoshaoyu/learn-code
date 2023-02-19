@@ -10,6 +10,11 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
+            "env": {
+                "MKLDNN_VERBOSE":"1",
+                "DNNL_VERBOSE":"1",
+                "ONEDNN_VERBOSE":"1",
+            },
             "justMyCode": false
         },
         {
@@ -58,6 +63,19 @@
             "request": "launch",
             "program": "ml/tensorflow/mine/mnist/Sample-5.py",
             "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "PT: f2",
+            "type": "python",
+            "request": "launch",
+            "program": "ml/pytorch/mine/f2.py",
+            "console": "integratedTerminal",
+            "env": {
+                "MKLDNN_VERBOSE":"1",
+                "DNNL_VERBOSE":"1",
+                "ONEDNN_VERBOSE":"1",
+            },
             "justMyCode": false
         }
     ]
