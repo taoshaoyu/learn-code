@@ -17,3 +17,4 @@ ml/tensorflow/mine/data/
 ml/tensorflow/mine/model_create/__pycache__/
 models/
 ml/tensorflow/mine/log/
+data/
