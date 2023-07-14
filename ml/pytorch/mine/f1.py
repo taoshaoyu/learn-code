@@ -71,6 +71,7 @@ def train(dataloader, model, loss_fn, optimizer):
 
         # Backpropagation
         optimizer.zero_grad()
+
         loss.backward()
         optimizer.step()
 
