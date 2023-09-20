@@ -77,6 +77,36 @@
                 "ONEDNN_VERBOSE":"1",
             },
             "justMyCode": false
-        }
+        },
+        {
+            "name": "hg: s1",
+            "type": "python",
+            "request": "launch",
+            "program": "ml/pytorch/mine/hg/s1.py",
+            "console": "integratedTerminal",
+            "args":[
+                "--output_dir=/tmp/"
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "Learn Code PyTorch: gdb",
+            "type": "cppdbg",
+            "request": "attach",
+            "MIMode": "gdb",
+            "program":"/home/taosy/bin/miniconda3/envs/pt-39-6/bin/python",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
     ]
 }

@@ -15,7 +15,7 @@ static PyObject *py_gcd(PyObject *self, PyObject *args) {
 }
 
 int in_mandel(double, double, int) {
-    return 0;
+    return 1;
 }
 static PyObject *py_in_mandel(PyObject *self, PyObject *args) {
   double x0, y0;
