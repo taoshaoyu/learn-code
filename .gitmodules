@@ -1,3 +1,6 @@
 [submodule "ml/pytorch/examples"]
 	path = ml/pytorch/examples
 	url = https://github.com/pytorch/examples
+[submodule "third/Mastering-Transformers"]
+	path = third/Mastering-Transformers
+	url = https://github.com/shaoyuta/Mastering-Transformers
