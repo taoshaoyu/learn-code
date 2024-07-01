@@ -90,6 +90,39 @@
             "justMyCode": false
         },
         {
+            "name": "learn bark_f1",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "AI/audio/bark_f1.py",
+            "console": "integratedTerminal",
+            "args":[
+                "--output_dir=/tmp/"
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "learn gpt",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "AI/ipynb/gpt.py",
+            "console": "integratedTerminal",
+            "args":[
+                "--output_dir=/tmp/"
+            ],
+            "justMyCode": false
+        },
+        {
+            "name": "learn gptj",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "AI/ipynb/gptj.py",
+            "console": "integratedTerminal",
+            "args":[
+                "--output_dir=/tmp/"
+            ],
+            "justMyCode": false
+        },
+        {
             "name": "Learn Code PyTorch: gdb",
             "type": "cppdbg",
             "request": "attach",
